@@ -31,8 +31,6 @@ class UploadController extends Controller
             }
             ProcessCsvFile::dispatch($header, $data);
         }
-        foreach ($chunks as $k => $chunk) {
-            dd($chunk);
-        }
+       
     }
 }
